@@ -1,15 +1,6 @@
 # Servn
 
-## References
-
-[local https tutorial](https://web.dev/how-to-use-local-https)
-
-[mkcert](https://github.com/FiloSottile/mkcert)
-
-```bash
-mkcert -install
-mkcert localhost
-```
+Basically, I wanted a Browserify CLI tool that watches files and serves over HTTPS, and Servn was born
 
 ## Help
 
@@ -33,4 +24,15 @@ mkcert localhost
     servn
     servn . -p 3000
     servn ~/project --host example.com --file index.js
+```
+
+## References
+
+[local https tutorial](https://web.dev/how-to-use-local-https)
+
+[mkcert](https://github.com/FiloSottile/mkcert)
+
+```bash
+mkcert -install
+mkcert localhost
 ```
