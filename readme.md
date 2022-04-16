@@ -1,6 +1,15 @@
 # Servn
 
-Basically, I wanted a Browserify CLI tool that watches files and serves over HTTPS, and Servn was born
+Basically, I wanted a Browserify CLI tool that watches files and serves over HTTPS, and thus, Servn was born
+
+## Installation
+
+```sh
+npm install -g servn
+```
+
+## Usage
+`servn -f main.js`
 
 ## Help
 
