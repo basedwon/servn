@@ -1,6 +1,6 @@
 {
   "name": "servn",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A code servn tool.",
   "repository": "basedwon/servn",
   "bin": {
