@@ -6,7 +6,10 @@
   "bin": {
     "servn": "servn.js"
   },
-  "nodemonConfig": {
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "nodemonConfig:Simple": {
     "restartable": "rs",
     "watch": [
       "package.json",
@@ -18,6 +21,12 @@
     }
   },
   "scripts": {
+    "dev:watch": "nodemon --exec \"npm run lint && npm run test\"",
+    "dev:test": "nodemon --exec \"npm run lint && npm run test && node .\"",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint .",
+    "start": "node .",
     "dev": "nodemon servn.js -- -s"
   },
   "dependencies": {
@@ -26,6 +35,12 @@
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1",
     "watchify": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-plugin-jest": "^26.1.4",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
   },
   "keywords": []
 }
